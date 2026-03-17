@@ -16,21 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/vidu1','App\Http\Controllers\ViDuController@vidu1');
-
-Route::get('/vidu2','App\Http\Controllers\ViDuController@vidu2');
-
-Route::get('/Age', function() {
-    return view('Age'); 
+Route::get('/yen', function () {
+    return "Hello Yen";
 });
 
-Route::post('/Age','App\Http\Controllers\ViDuController@Age');
 
-Route::get('/laythongtinsach','App\Http\Controllers\BookController@laythongtinsach2');
-
-Route::get('/sach','App\Http\Controllers\BookController@laythongtinsach');
-Route::get('/theloai','App\Http\Controllers\BookController@laythongtintheloai');
-Route::get('/QB_themdulieu','App\Http\Controllers\BookController@QB_themdulieu');
-
-route::get('/camha','App\Http\Controllers\btn@ten');
+route::get('/camha', 'App\Http\Controllers\btn@ten');
