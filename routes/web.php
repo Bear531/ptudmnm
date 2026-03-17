@@ -32,3 +32,5 @@ Route::get('/laythongtinsach','App\Http\Controllers\BookController@laythongtinsa
 Route::get('/sach','App\Http\Controllers\BookController@laythongtinsach');
 Route::get('/theloai','App\Http\Controllers\BookController@laythongtintheloai');
 Route::get('/QB_themdulieu','App\Http\Controllers\BookController@QB_themdulieu');
+
+route::get('/camha','App\Http\Controllers\btn@ten');
