@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/yen', function () {
-    return "Hello Yen";
+    return "Hello Yen"; #dòng này để cố ý tạo xung đột
 });
 
 
