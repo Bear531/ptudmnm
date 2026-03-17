@@ -14,6 +14,7 @@ function vidu2(){
 return view('vidu2');
 }
 
+
 function Age(Request $request)
 {
 $nam_sinh = $request->input("nam_sinh");
