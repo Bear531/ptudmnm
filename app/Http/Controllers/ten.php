@@ -6,6 +6,6 @@ use Illuminate\Http\Request;
 
 class ten extends Controller{
 function ten(){
-    return view('ten');
+    return view('ten2');
 }
 }

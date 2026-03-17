@@ -35,7 +35,5 @@ Route::get('/QB_themdulieu','App\Http\Controllers\BookController@QB_themdulieu')
 
 Route::get('/quynhanh','App\Http\Controllers\ten@ten');
 
-
-
-
+route::get('/camha','App\Http\Controllers\btn@ten');
 
