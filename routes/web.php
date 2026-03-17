@@ -22,4 +22,3 @@ Route::get('/camha','App\Http\Controllers\btn@ten');
 
 use App\Http\Controllers\MovieController;
 Route::get('/top-movies', [MovieController::class, 'laythongtinphim']);
-
