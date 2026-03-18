@@ -20,9 +20,8 @@ Route::get('/yen', function () {
     return "Hello Yen"; #dòng này để cố ý tạo xung đột
 });
 
+Route::get('/quynhanh', 'App\Http\Controllers\ten@ten');
 
-Route::get('/laythongtinsach','App\Http\Controllers\BookController@laythongtinsach2');
+route::get('/camha', 'App\Http\Controllers\btn@ten');
 
-Route::get('/sach','App\Http\Controllers\BookController@laythongtinsach');
-Route::get('/theloai','App\Http\Controllers\BookController@laythongtintheloai');
-Route::get('/QB_themdulieu','App\Http\Controllers\BookController@QB_themdulieu');
+route::get('/runtime', 'App\Http\Controllers\btn@runtime');
