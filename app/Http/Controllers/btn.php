@@ -18,6 +18,6 @@ class btn extends BaseController
             ->limit(10)
             ->get();
 
-        return view('runtime_movie', compact('movie'));
+        return view('btn', compact('movie'));
     }
 }
