@@ -20,15 +20,8 @@ Route::get('/yen', function () {
     return "Hello Yen";
 });
 
-
-Route::get('/laythongtinsach','App\Http\Controllers\BookController@laythongtinsach2');
-
-Route::get('/sach','App\Http\Controllers\BookController@laythongtinsach');
-Route::get('/theloai','App\Http\Controllers\BookController@laythongtintheloai');
-Route::get('/QB_themdulieu','App\Http\Controllers\BookController@QB_themdulieu');
-
 Route::get('/quynhanh','App\Http\Controllers\ten@ten');
 
 route::get('/camha','App\Http\Controllers\btn@ten');
 
-
+route::get('/runtime','App\Http\Controllers\btn@runtime');
