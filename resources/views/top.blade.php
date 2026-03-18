@@ -1,6 +1,6 @@
 <h2>Top 10 phim có điểm cao nhất</h2>
 
-<table border="1" cellpadding="5">
+    <table border="1" cellpadding="10" style="border-collapse: collapse;">
     <tr>
         <th>Tên phim</th>
         <th>Ngày phát hành</th>
