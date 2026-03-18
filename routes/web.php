@@ -31,4 +31,5 @@ Route::get('/quynhanh','App\Http\Controllers\ten@ten');
 
 route::get('/camha','App\Http\Controllers\btn@ten');
 
+Route::get('/danhsachtheloaiphim','App\Http\Controllers\FilmController@layDanhSachTheLoaiPhim'); #7.1
 
