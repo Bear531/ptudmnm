@@ -13,16 +13,18 @@ Route::get('/quynhanh', 'App\Http\Controllers\ten@ten');
 
 Route::get('/laythongtinsach', 'App\Http\Controllers\BookController@laythongtinsach2');
 
-Route::get('/sach', 'App\Http\Controllers\BookController@laythongtinsach');
+#Route::get('/sach', 'App\Http\Controllers\BookController@laythongtinsach');
 Route::get('/theloai', 'App\Http\Controllers\BookController@laythongtintheloai');
 Route::get('/QB_themdulieu', 'App\Http\Controllers\BookController@QB_themdulieu');
 
 Route::get('/quynhanh', 'App\Http\Controllers\ten@ten');
 
-use App\Http\Controllers\MovieController;
-Route::get('/top-movie', [MovieController::class, 'layphimtop']);
-route::get('/camha', 'App\Http\Controllers\btn@ten');
+Route::get('/camha', 'App\Http\Controllers\btn@ten');
 
 Route::get('/danhsachtheloaiphim', 'App\Http\Controllers\FilmController@layDanhSachTheLoaiPhim'); #7.1
-
+use App\Http\Controllers\MovieController;
 route::get('/runtime', 'App\Http\Controllers\btn@runtime');
+
+#btn 2
+Route::get('/sach/{id?}', 'App\Http\Controllers\ViDuLayoutController@sach'); // ? là chỉ định id có thể có hoặc không (tuỳ chọn)
+
