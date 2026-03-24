@@ -2,12 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\Book;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Http\Request;
 
-class VidulayoutController extends Controller {}
-function chitiet($id)
+class ViDuLayoutController extends Controller
 {
-    $data = DB::select("select * from sach where id = ?", [$id])[0]; //DB::table("sach")->where("id",$id)->first();
-    return view("vidusach.chitiet", compact("data"));
+    function sach($id = null)
+    {
+        if (isset($id)) {
+            $data_sach = DB::select("select * from sach where the_loai = ? order by gia_ban asc limit 0,8", [$id]);
+        } else {
+            $data_sach = DB::select("select * from sach order by gia_ban asc limit 0,8");
+        }
+        return view('index', compact('data_sach', 'id'));
+    }
 }
