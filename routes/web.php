@@ -28,3 +28,4 @@ route::get('/runtime', 'App\Http\Controllers\btn@runtime');
 #btn 2
 Route::get('/sach/{id?}', 'App\Http\Controllers\ViDuLayoutController@sach'); // ? là chỉ định id có thể có hoặc không (tuỳ chọn)
 
+Route::get('sach/chitiet/{id}','App\Http\Controllers\ViduLayoutController@chitiet');
