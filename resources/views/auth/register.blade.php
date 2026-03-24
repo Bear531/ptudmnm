@@ -1,4 +1,9 @@
 <x-guest-layout>
+    <x-slot name="logo">
+        <a href="/">
+            <img src="{{ asset('images/logo-hub.png') }}" width="200px">
+        </a>
+    </x-slot>        
     <form method="POST" action="{{ route('register') }}">
         @csrf
 
